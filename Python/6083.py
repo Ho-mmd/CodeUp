@@ -1,8 +1,10 @@
+#Keep It Simple!
+
 a, b, c = map(int, input().split());
 
-for i in range(a * b * c):
-    
-    for j in range(2):
-        print(j, end = " ");
-        for k in range(2):
-            print(k);
+for i in range(a):
+    for j in range(b):
+        for k in range(c):
+            print(i, j, k);
+
+print(a * b * c);
