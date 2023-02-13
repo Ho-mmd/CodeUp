@@ -1,13 +1,14 @@
 n = int(input());
 arr = list(map(int, input().split()));
-answer = 0;
-cnt = 0;
+
 arr.sort();
+tmp = 0;
+answer = 0;
 
 for i in arr:
-    cnt += 1;
-    if(cnt >= i):
+    tmp += 1;
+    if(i <= tmp):
+        tmp = 0;
         answer += 1;
-        cnt = 0;
 
 print(answer);

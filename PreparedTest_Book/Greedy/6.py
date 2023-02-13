@@ -1,14 +1,12 @@
-n = list(map(int, input()));
-tmp = 0;
+arr = list(map(int, input()));
+answer = 0;
 
-n.sort();
+arr.sort();
 
-for i in n:
-    if(i <= 1 or tmp == 0):
-        tmp += i;
+for i in arr:
+    if(answer == 0 or i <= 1):
+        answer += i;
     else:
-        tmp *= i;
-
-answer = tmp;
+        answer *= i;
 
 print(answer);

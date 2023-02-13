@@ -1,8 +1,8 @@
 n = int(input());
 arr = list(map(int, input().split()));
+target = 1;
 
 arr.sort();
-target = 1;
 
 for i in arr:
     if(target < i):

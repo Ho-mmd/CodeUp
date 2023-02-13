@@ -1,11 +1,13 @@
-n = list(map(int, input()));
+arr = input();
 answer = 0;
 
-for i in range(len(n) - 1):
-    if(n[i] != n[i + 1]):
+for i in range(len(arr) - 1):  
+    if(arr[i] != arr[i + 1]):
         answer += 0.5;
 
-if(answer > int(answer)):
+if(answer - int(answer) > 0):
     answer = int(answer) + 1;
+else:
+    answer = int(answer);
 
-print(int(answer));
+print(answer);
